@@ -153,6 +153,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 90px;
+    padding-bottom: 10px;
 
         /* Initially hide Section 4 for animation */
         opacity: 0;
