@@ -154,16 +154,7 @@
     align-items: center;
     padding-top: 90px;
     padding-bottom: 10px;
-
-        /* Initially hide Section 4 for animation */
-        opacity: 0;
-        transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-    
-    /* When in viewport, fade and slide up */
-    .section4.reveal {
-        opacity: 1;
-    }
+}
 
 
 /* SECTION TITLE */
@@ -192,14 +183,12 @@
     text-align: center;
     width: 280px;
     opacity: 0;
-    transform: translateY(30px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 /* When in viewport, reveal each product card */
 .product-card.reveal {
     opacity: 1;
-    transform: translateY(0);
 }
 
 /* Staggered product card delay */
@@ -278,13 +267,7 @@
     animation: separatorGlow 1.5s infinite alternate ease-in-out;
 }
 
-/* PRODUCT CARD HOVER EFFECT */
-.product-card {
-    transition: transform 0.1s ease-out; /* Faster and more responsive */
-}
-.product-card:hover {
-    transform: scale(1.05);
-}
+/* PRODUCT CARD IMG HOVER EFFECT */
 .product-card img {
     transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
 }
@@ -293,6 +276,7 @@
 }
 .product-card img:hover {
     filter: drop-shadow(10px 5px 12px rgba(255, 215, 0, 0.3)); /* Golden shadow at right & bottom */
+    transform: scale(1.07);
 }
 
 
